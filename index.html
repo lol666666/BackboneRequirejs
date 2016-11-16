@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>requirejs+backbone架构</title>
+        <link href="/css/site.css" rel="stylesheet">
+        <script type="text/javascript" src="/viewjs/lib/require.js"></script>
+        <script type="text/javascript" src="/viewjs/app.js"></script>
+    </head>
+    <body>
+        <div class="bodywrapper">
+            <div class="headerwrapper">
+                <div class="topheader">
+                    <div class="left">
+                        <a id="header_logo" data-action="home" href="#home"><img src="/images/logo.png"></a>
+                        <br clear="all" />
+                    </div><!--left-->
+                    <div class="center">
+                        <ul class="headerbigmenu" id="big_menu">
+                        </ul>
+                    </div>
+                    <div class="right">
+                        <div class="userinfo">
+                            <img src="/images/new-dumi-logo.png" alt="" style="width:30px;height:30px;background-color:#3D506F"/>
+                            <span class="username">请登陆</span>
+                        </div><!--userinfo-->
+                        
+                        <div class="userinfodrop">
+                            <div class="avatar">
+                                <a href=""><img src="/images/new-dumi-logo.png" alt="" /></a>
+                            </div><!--avatar-->
+                            <div class="userdata">
+                                <h4 class="username"></h4>
+                                <span class="email" id="email">@baidu.com</span>
+                                <ul>
+                                    <li><a href="/site/login">登陆</a></li>
+                                    <li><a href="/site/logout">退出</a></li>
+                                </ul>
+                            </div><!--userdata-->
+                        </div><!--userinfodrop-->
+                    </div><!--right-->
+                </div><!--topheader-->
+                
+                <div class="header" style="display:none;">
+                    <ul class="headermenu" id="sub_menu">
+                    </ul>
+                </div><!--header-->
+            </div><!--headerwrapper-->
+            
+            <div class="vernav2 iconmenu" style="display:none;">
+                <ul id="ver_menu">
+                </ul>
+                <a class="togglemenu"></a>
+                <br /><br />
+            </div><!--leftmenu-->
+                
+            <div id="main_content"></div>
+            <footer class="footer">
+                <div class="container">
+                    <p class="pull-center">说明权限</p>
+                </div>
+            </footer>
+        </div>
+    </body>
+</html>
